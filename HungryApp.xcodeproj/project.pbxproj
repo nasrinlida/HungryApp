@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		CEFE12A12640B39A00FC0D13 /* HungryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE12A02640B39A00FC0D13 /* HungryAppApp.swift */; };
-		CEFE12A32640B39A00FC0D13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE12A22640B39A00FC0D13 /* ContentView.swift */; };
 		CEFE12A52640B39B00FC0D13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFE12A42640B39B00FC0D13 /* Assets.xcassets */; };
 		CEFE12A82640B39B00FC0D13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFE12A72640B39B00FC0D13 /* Preview Assets.xcassets */; };
+		CEFE12B12640B81F00FC0D13 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE12B02640B81F00FC0D13 /* Color.swift */; };
+		CEFE12B52640BAAB00FC0D13 /* LogoGreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE12B42640BAAB00FC0D13 /* LogoGreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEFE129D2640B39A00FC0D13 /* HungryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HungryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFE12A02640B39A00FC0D13 /* HungryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HungryAppApp.swift; sourceTree = "<group>"; };
-		CEFE12A22640B39A00FC0D13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEFE12A42640B39B00FC0D13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEFE12A72640B39B00FC0D13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEFE12A92640B39B00FC0D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFE12B02640B81F00FC0D13 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		CEFE12B42640BAAB00FC0D13 /* LogoGreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoGreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				CEFE12A02640B39A00FC0D13 /* HungryAppApp.swift */,
-				CEFE12A22640B39A00FC0D13 /* ContentView.swift */,
+				CEFE12B02640B81F00FC0D13 /* Color.swift */,
 				CEFE12A42640B39B00FC0D13 /* Assets.xcassets */,
 				CEFE12A92640B39B00FC0D13 /* Info.plist */,
 				CEFE12A62640B39B00FC0D13 /* Preview Content */,
+				CEFE12B42640BAAB00FC0D13 /* LogoGreen.swift */,
 			);
 			path = HungryApp;
 			sourceTree = "<group>";
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEFE12A32640B39A00FC0D13 /* ContentView.swift in Sources */,
+				CEFE12B52640BAAB00FC0D13 /* LogoGreen.swift in Sources */,
 				CEFE12A12640B39A00FC0D13 /* HungryAppApp.swift in Sources */,
+				CEFE12B12640B81F00FC0D13 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
