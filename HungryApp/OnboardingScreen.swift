@@ -25,7 +25,12 @@ struct OnboardingScreen: View {
                 .padding()
             Spacer()
             
-            Image("OnboardingOne")
+            switch screen {
+            case .screenOne: Image("OnboardingOne")
+            case .screenTwo: Image("OnboardingTwo")
+            case .screenThree: Image("OnboardingThree")
+            }
+            
             Spacer()
             
             VStack(spacing: 10) {
@@ -54,7 +59,14 @@ struct OnboardingScreen: View {
             }
             Spacer()
             
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {
+                switch screen {
+                case .screenOne: screen = .screenTwo
+                case .screenTwo: screen = .screenThree
+                case .screenThree: screen = .screenOne
+                }
+                
+            }, label: {
                 Text("Next")
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
