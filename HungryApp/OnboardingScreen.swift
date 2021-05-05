@@ -17,6 +17,28 @@ enum Onboarding {
 struct OnboardingScreen: View {
     @State private var screen = Onboarding.screenOne
     
+    var screenTitle: String {
+        switch screen {
+        case .screenOne:
+            return "Find food you love"
+        case .screenTwo:
+            return "Fast delivery"
+        case .screenThree:
+            return "Enjoy the experience"
+        }
+    }
+    
+    var screenDescription: String {
+        switch screen {
+        case .screenOne:
+            return "Discover the best menus from over 100 cuisines and over 1000 restaurants."
+        case .screenTwo:
+            return "Fast & free delivery to your home or office. We will deliver it, wherever you are! "
+        case .screenThree:
+            return "Don’t feel like going out? No problem, we’ll deliver your order. In bed! :)"
+        }
+    }
+    
     var body: some View {
         VStack {
             Image("HungryLogoWhite")
@@ -34,26 +56,24 @@ struct OnboardingScreen: View {
             Spacer()
             
             VStack(spacing: 10) {
-                Text("Find food you love")
+                Text(screenTitle)
                     .fontWeight(.bold)
                     .font(.system(size: 30))
                 
-                Text("Discover the best menus from over 100 cuisines and over 1000 restaurants.")
+                Text(screenDescription)
                     .multilineTextAlignment(.center)
             }
             Spacer()
             
             HStack(spacing: 10) {
                 Circle()
-                    .fill(Color.backgroundGreen)
+                    .fill(screen == .screenOne ? Color.backgroundGreen : Color.black.opacity(0.1))
                     .frame(width: 8, height: 8)
                 Circle()
-                    .fill(Color.black)
-                    .opacity(0.1)
+                    .fill(screen == .screenTwo ? Color.backgroundGreen : Color.black.opacity(0.1))
                     .frame(width: 8, height: 8)
                 Circle()
-                    .fill(Color.black)
-                    .opacity(0.1)
+                    .fill(screen == .screenThree ? Color.backgroundGreen : Color.black.opacity(0.1))
                     .frame(width: 8, height: 8)
                 
             }
